@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>ZIKA</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Times New Roman", sans-serif}
+body {font-size:20px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-grey w3-collapse w3-top w3-large w3-padding" style="z-index:3;width:300px;font-weight:bold;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft" style="width:100%;font-size:22px">Close Menu</a>
+  <div class="w3-container">
+    <h3 class="w3-padding-64"><b>Logo<br>Perusahaan</b></h3>
+  </div>
+  <div class="w3-bar-block">
+    <a href="#" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tentang Wabah</a> 
+    <a href="#showcase" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Kasus Penyebaran</a> 
+    <a href="#services" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Penanggulanan</a> 
+  </div>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-container w3-top w3-hide-large w3-red w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-red w3-margin-right" onclick="w3_open()">☰</a>
+  <span>Company Name</span>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class="w3-container w3-center" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo w3-bottombar w3-border-dark-grey
+    "><b>Virus Zika</b></h1>
+  </div>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="Nyamuk Zika.JPG" style="width:100%" alt="Nyamuk Aedes">
+      <img src="Akibat.JPG" style="width:100%" alt="Akibat Terinfeksi Virus Zika">
+    </div>
+
+    <div class="w3-half">
+      <img src="Bentuk Virus.JPG" style="width:100%" alt="Bentuk Virus Zika Dilihat Dari Mikroskop">
+      <img src="Zika.JPG" style="width:100%" alt="Pemeriksaan">
+    </div>
+  </div>
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="w3-container" id="services" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-center"  style="border:2px solid black;">Tentang</h1>
+    <hr style="width:850px;border:5px solid grey" class="w3-round">
+
+    <h2 style="width:80px; :5px solid grey" class="w3-round  w3-bottombar">Gejala</h2>
+   
+    <p></p>
+
+    <h2 style="width:150px; :5px solid grey" class="w3-round  w3-bottombar">Pencegahan</h2>
+
+    <p>Hingga kini, belum tersedia vaksin yang bisa mencegah penyakit virus Zika. Jika Anda tinggal dan sedang bepergian ke daerah tropis di mana virus Zika banyak berkembang, hal yang paling penting adalah dengan mencegah gigitan nyamuk. Berikut ini kiat-kiatnya:
+
+- Tinggal di tempat yang memiliki pendingin ruangan.
+
+- Gunakan krim penangkal nyamuk.
+
+- Gunakan bahan pembasmi serangga yang sudah terdaftar pada Environmental Protection Agency (EPA), karena aman bagi ibu hamil dan menyusui.
+
+- Pakai baju lengan panjang dan celana panjang dengan warna muda atau cerah.
+
+- Tidur dengan kelambu.
+
+- Kuras tempat-tempat yang berpotensi menjadi genangan air.
+
+- Oleskan permethrin pada pakaian, seprai, sarung dan bantal, dan barang-barang lainnya.</p>
+
+    <h2 style="width:150px; :5px solid grey" class="w3-round  w3-bottombar">Pengobatan</h2>
+
+    <p></p>
+
+  </div>
+  
+  <div class="w3-container" id="designers" style="margin-top:75px">
+     <h1 class="w3-xxxlarge w3-center"  style="border:2px solid black;">Kasus Penyebaran</h1>
+    <hr style="width:850px;border:5px solid grey" class="w3-round">
+
+    <h2 style="width:150px; :5px solid grey" class="w3-round  w3-bottombar">Asal Mula<h2>
+
+    <p>Virus zika adalah virus yang proses penularannya melalui media nyamuk Aedes aegypti. Masih satu famili dengan virus lain seperti virus penyebab penyakit demam berdarah, penyakit kuning, dan penyakit chikungunya.
+
+Beberapa riset mengembangkan kecurigaan adanya kemungkinan penyebaran virus ini di luar media nyamuk, seperti melalui proses tranfusi darah dan hubungan seks. Meski dugaan ini belum bisa dibuktikan kebenarannya.
+
+Organisasi kesehatan dunia WHO mencatat, virus ini pertama ini diidentifikasi pada tahun 1947 di negara Uganda. Temuan pertama kali dari kasus virus zika justru didapatkan dari kasus demam yang muncul pada kera asli endemik Uganda.
+
+Kemudian virus ini menjangkiti manusia dan pernah menyerang sejumlah populasi manusia di kawasan Afrika secara meluas pada tahun 1954.
+
+Kasus pertama dari penyakit yang disebabkan oleh virus zika di luar Afrika terjadi di Yap Island, sebuah pulau di kawasan Pasifik Mikronesia pada tahun 2007. Semenjak itu, kasus zika beberapa kali muncul dalam frekuensi yang tidak kuat di kawasan Pasifik, bahkan kini hingga Asia Tenggara.</p>
+
+    <h2 style="width:250px; :5px solid grey" class="w3-round  w3-bottombar">Kawasan Terinfeksi</h2>
+
+    <p>Kasus pertama dari penyakit yang disebabkan oleh virus zika di luar Afrika terjadi di Yap Island, sebuah pulau di kawasan Pasifik Mikronesia pada tahun 2007. Semenjak itu, kasus zika beberapa kali muncul dalam frekuensi yang tidak kuat di kawasan Pasifik, bahkan kini hingga Asia Tenggara.
+    Kemudian pada awal 2016, wabah penyakit virus Zika menyebar di benua Amerika. Wabah ini mulai merebak pada April 2015 di Brasil, lalu menyebar ke negara-negara lain di Amerika Selatan, Amerika Tengah, dan Karibia.
+</p>
+
+    <h2 style="width:395px; :5px solid grey" class="w3-round  w3-bottombar">Peta Wilayah Kasus Penyebaran</h2>
+
+   <img src="Peta.JPG" onclick="onClick(this)" alt="Peta Wilayah Kasus Penyebaran">
+
+  </div>
+
+  <div class="w3-container" id="Penanggulangan" style="margin-top:75px"> 
+    <h1 class="w3-xxxlarge w3-center"  style="border:2px solid black;">Penanggulangan</h1>
+    <hr style="width:850px;border:5px solid grey" class="w3-round">
+
+    <h2 style="width:230px; :5px solid grey" class="w3-round  w3-bottombar">Peran Pemerintah</h2>
+
+    <p>Organisasi Kesehatan Dunia atau WHO sudah menetapkan status waspada terhadap penyebaran virus zika. Kementerian Perhubungan melakukan upaya pencegahan penyebaran virus zika di seluruh pelabuhan dan bandara internasional, karena virus tersebut kini sedang merebak di Kawasan Asia Tenggara. Petugas kantor kesehatan pelabuhan dan bandar udara dikerahkan untuk melakukan screening terhadap mereka yang menderita demam(2015). 
+      
+      Unit-unit kesehatan di pelabuhan-pelabuhan umum dan penyeberangan di Batam serta bandara internasional utama Indonesia telah memasang perlengkapan pendeteksi suhu badan (mass thermal scanner) untuk memonitor suhu badan para penumpang dari Singapura dan Malaysia dengan batas toleransi berbadan sehat dengan suhu badan paling tinggi 38 derajat Celcius(2015).</p>
+
+    <h2 style="width:290px; :5px solid grey" class="w3-round  w3-bottombar">Kesadaran Masyarakat</h2>
+
+    <p></p>
+
+    <h2 style="width:150px; :5px solid grey" class="w3-round  w3-bottombar">Action Plan</h2>
+
+    <p>•  Jika berpergian ke area yang tengah mengalami kasus penularan virus Zika (area yang terkena dampak), orang yang berpergian, terutama orang yang mengalami kelainan imun atau penyakit kronis parah, perlu berkonsultasi dengan dokter setidaknya 6 minggu sebelum perjalanan, serta memiliki upaya pencegahan lebih untuk menghindari gigitan nyamuk.</p>
+<p>•  Selama perjalanan, jika berpergian ke daerah pedesaan yang terkenal dampak, bawalah kelambu portable dan semprotkan permethrin (insektisida) padanya. Permethrin TIDAK BOLEH digunakan pada kulit. Segera cari bantuan dokter jika merasa tidak sehat. </p>
+<P>•  Orang yang kembali dari area yang terkena dampak harus mengenakan obat pengusir nyamuk setidaknya selama 21 hari setelah ketibaan di Hong Kong. Jika merasa tidak sehat, mis. mengalami demam, segera minta saran dokter, dan berikan rincian perjalanan kepada dokter.
+</p></p>
+    
+  </div>
+
+  <!-- The Team -->
+  <div class="w3-row-padding w3-grayscale">
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team2.jpg" alt="John" style="width:100%">
+        <div class="w3-container">
+          <h3>John Doe</h3>
+          <p class="w3-opacity">CEO & Founder</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team1.jpg" alt="Jane" style="width:100%">
+        <div class="w3-container">
+          <h3>Jane Doe</h3>
+          <p class="w3-opacity">Designer</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col m4 w3-margin-bottom">
+      <div class="w3-light-grey">
+        <img src="/w3images/team3.jpg" alt="Mike" style="width:100%">
+        <div class="w3-container">
+          <h3>Mike Ross</h3>
+          <p class="w3-opacity">Architect</p>
+          <p>Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Packages / Pricing Tables -->
+  <div class="w3-container" id="packages" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Packages.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Some text our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
+  </div>
+
+  <div class="w3-row-padding">
+    <div class="w3-half w3-margin-bottom">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-dark-grey w3-xlarge w3-padding-32">Basic</li>
+        <li class="w3-padding-16">Floorplanning</li>
+        <li class="w3-padding-16">10 hours support</li>
+        <li class="w3-padding-16">Photography</li>
+        <li class="w3-padding-16">20% furniture discount</li>
+        <li class="w3-padding-16">Good deals</li>
+        <li class="w3-padding-16">
+          <h2>$ 199</h2>
+          <span class="w3-opacity">per room</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-white w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+        
+    <div class="w3-half">
+      <ul class="w3-ul w3-light-grey w3-center">
+        <li class="w3-red w3-xlarge w3-padding-32">Pro</li>
+        <li class="w3-padding-16">Floorplanning</li>
+        <li class="w3-padding-16">50 hours support</li>
+        <li class="w3-padding-16">Photography</li>
+        <li class="w3-padding-16">50% furniture discount</li>
+        <li class="w3-padding-16">GREAT deals</li>
+        <li class="w3-padding-16">
+          <h2>$ 249</h2>
+          <span class="w3-opacity">per room</span>
+        </li>
+        <li class="w3-light-grey w3-padding-24">
+          <button class="w3-button w3-red w3-padding-large w3-hover-black">Sign Up</button>
+        </li>
+      </ul>
+    </div>
+  </div>
+  
+  <!-- Contact -->
+  <div class="w3-container" id="contact" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Contact.</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+    <p>Do you want us to style your home? Fill out the form and fill me in with the details :) We love meeting new people!</p>
+    <form action="/action_page.php" target="_blank">
+      <div class="w3-section">
+        <label>Name</label>
+        <input class="w3-input w3-border" type="text" name="Name" required>
+      </div>
+      <div class="w3-section">
+        <label>Email</label>
+        <input class="w3-input w3-border" type="text" name="Email" required>
+      </div>
+      <div class="w3-section">
+        <label>Message</label>
+        <input class="w3-input w3-border" type="text" name="Message" required>
+      </div>
+      <button type="submit" class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Send Message</button>
+    </form>  
+  </div>
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
