@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+	<title>Asal Mula</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Poppins", sans-serif}
+body {font-size:16px;}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+
+
+/* Style the sidenav links and the dropdown button */
+/*GA BOLEH DIHAPUS!!!*/
+ a, .dropdown-btn {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: black;
+  display: block;
+  border: none;
+  background: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  outline: none;
+
+}
+
+
+/* Main content */
+/*GA BOLEH DIHAPUS!!!*/
+.main {
+   margin-left: 200px;/* Same as the width of the sidenav */
+  font-size: 20px; /* Increased text to enable scrolling */
+  padding: 0px 10px;
+}
+
+/* Add an active class to the active dropdown button */
+/*GA BOLEH DIHAPUS!!!*/
+.active {
+  background-color: rgb(204, 204, 204);
+  color: black;
+}
+
+/* Dropdown container (hidden by default). Optional: add a lighter background color and some left padding to change the design of the dropdown content */
+/*GA BOLEH DIHAPUS!!!*/
+.dropdown-container {
+  display: none;
+  background-color: rgb(217, 217, 217);
+  padding-left: 8px;
+}
+
+/* Optional: Style the caret down icon */
+/*GA BOLEH DIHAPUS!!!*/
+.fa-caret-down {
+  float: right;
+  padding-right: 8px;
+}
+
+
+/* Some media queries for responsiveness */
+/*GA BOLEH DIHAPUS!!!*/
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;}
+}
+</style>
+<body>
+
+<!-- Sidebar/menu -->
+<!--GA BOLEH DIHAPUS!!!-->
+
+  <nav class="w3-sidebar w3-grey w3-collapse  w3-top w3-large w3-padding " style="z-index:3;width:300px;" id="mySidebar"><br>
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-hide-large w3-display-topleft " style="width:100%;font-size:22px">Close Menu</a>
+    <img src="Logo.png"  width="250">
+  <a class="w3-hover-text-white" href="Home.html">Home</a>
+  <button class="dropdown-btn w3-hover-text-white">Tentang Wabah
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a class="w3-hover-text-white" href="Gejala.html">Gejala</a>
+    <a class="w3-hover-text-white" href="Pencegahan.html">Pencegahan</a>
+    <a class="w3-hover-text-white" href="Pengobatan.html">Pengobatan</a>
+  </div>
+  <button class="dropdown-btn w3-hover-text-white">Kasus Penyebaran
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a class="w3-hover-text-white" href="Asal Mula.html">Asal Mula</a>
+    <a class="w3-hover-text-white" href="Kawasan.html">Kawasan Terinfeksi</a>
+    <a class="w3-hover-text-white" href="Peta.html">Peta Wlayah</a>
+  </div>
+  <button class="dropdown-btn w3-hover-text-white">Penanggulangan
+    <i class="fa fa-caret-down"></i>
+  </button>
+  <div class="dropdown-container">
+    <a class="w3-hover-text-white" href="Peran.html">Peran Pemerintah</a>
+    <a class="w3-hover-text-white" href="Kesadaran.html">Kesadaran Masyarakat</a>
+    <a class="w3-hover-text-white" href="Plan.html">Action Plan</a>
+  </div>
+</div>
+</nav>
+ 
+
+<script>
+/* Loop through all dropdown buttons to toggle between hiding and showing its dropdown content - This allows the user to have multiple dropdowns without any conflict */
+/*GA BOLEH DIHAPUS!!!*/
+var dropdown = document.getElementsByClassName("dropdown-btn");
+var i;
+
+for (i = 0; i < dropdown.length; i++) {
+  dropdown[i].addEventListener("click", function() {
+  this.classList.toggle("active");
+  var dropdownContent = this.nextElementSibling;
+  if (dropdownContent.style.display === "block") {
+  dropdownContent.style.display = "none";
+  } else {
+  dropdownContent.style.display = "block";
+  }
+  });
+}
+</script>
+
+
+<!-- Top menu on small screens -->
+<!--GA BOLEH DIHAPUS!!!-->
+<header class="w3-container w3-top w3-hide-large w3-gray w3-xlarge w3-padding">
+  <a href="javascript:void(0)" class="w3-button w3-margin-right " style="text-align: left" onclick="w3_open()">☰ > Zika Virus Team <</a>
+  </header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<!--GA BOLEH DIHAPUS!!!-->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<!--GA BOLEH DIHAPUS!!!-->
+<div class="w3-main" style="margin-left:340px;margin-right:40px">
+
+  <!-- Header -->
+  <div class=" w3-container w3-center" style="margin-top:80px" id="showcase">
+    <h1 class="w3-jumbo w3-bottombar w3-border-dark-grey
+    "><b>Asal Mula Zika</b></h1>
+  </div>
+  
+
+
+  <!-- Modal for full size images on click-->
+  <!--GA BOLEH DIHAPUS!!!-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+    <p>Virus zika adalah virus yan proses penularannya melalui media nyamuk Aedes aegypti. Masih satu famili dengan virus lain seperti virus penyebab penyakit demam berdarah, penyakit kuning, penyakit chikungunya.</p>
+
+    <p>Beberapa riset mengembangkan kecurigaan adanya kemungkinan penyebaran virus ini di luar media nyamuk, seperti melalui proses tranfusi darah dan hubungan seks. Meski dugaan ini belum bisa dibuktikan kebenarannya.</p>
+
+    <p>Organisasi kesehatan dunia (WHO) mencatat, virus ini pertama diidentifikasi pada tahun 1947 di negara Uganda. Temuan pertama kali dari kasus virus zika justru didapatkan dari kasus demam yang muncul pada kera asli endemik Uganda. Kemudian virus ini menjangkiti manusia dan pernah menyerang sejumlah populasi manusia di kawasan Afrika secara meluas pada tahun 1954.</p>
+
+    <p>Kasus pertama dari penyakit yang disebabkan oleh virus zika di luar Afrika terjadi di Yap Island, sebuah pulau di kawasan Pasifik Mikronesia pada tahun 2007. Semenjak itu, kasus zika beberapa kali muncul dalam frekuensi yang tidak kuat di kawasan Pasifik, bahkan kini hingga Asia Tenggara.</p>
+
+  </div>
+  
+  <!-- Designers -->
+  <div class="w3-container" id="designers" style="margin-top:75px">
+    <h1 class="w3-xxxlarge w3-text-red"><b>Content</b></h1>
+    <hr style="width:50px;border:5px solid red" class="w3-round">
+
+    <h2>Cotent<h2>
+
+  </div>
+
+<!-- End page content -->
+<!--GA BOLEH DIHAPUS!!!-->
+</div>
+
+<!-- W3.CSS Container -->
+<!--GA BOLEH DIHAPUS!!!-->
+<div class="w3-hover-text-white w3-container w3-padding-32" style="margin-top:75px;padding-right:58px"><p class="w3-right"><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity"></a></p></div>
+
+<script>
+// Script to open and close sidebar
+//GA BOLEH DIHAPUS!!!
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+//GA BOLEH DIHAPUS!!!
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
+
+<style>.footer { position: fixed; left: 0; bottom: 0; width: 100%; background-color: grey; color: white; text-align: center;}</style>
+
+<div class="footer"><p>M. Rafli Fariansyah</p></div>
